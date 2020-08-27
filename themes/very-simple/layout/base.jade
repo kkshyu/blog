@@ -72,27 +72,6 @@ html
 
     block main
 
-    footer#footer
-      .container
-        .bar
-          .social
-            +social_icon('email', "mailto:", "fa-envelope-o")
-            +social_icon('twitter', 'http://twitter.com/', 'fa-twitter')
-            +social_icon('weibo', 'http://weibo.com/', 'fa-weibo')
-            +social_icon('github', 'https://github.com/', 'fa-github')
-            +social_icon('googleplus', 'https://plus.google.com/', 'fa-google-plus')
-            +social_icon('rss', "", "fa-rss")
-
-          .footer
-            - var year = date(new Date(), 'YYYY');
-            = '© ' + year + ' '
-            a(href='/', rel='nofollow')= config.author
-            = '. Powered by '
-            a(rel='nofollow', target='_blank', href='https://hexo.io') Hexo
-            = '. Theme '
-            a(target='_blank', href='https://github.com/lotabout/very-simple') very-simple
-            |.
-
     if theme.fancybox
       link(rel='stylesheet', type='text/css', href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css")
       script(src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js")
